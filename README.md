@@ -1,5 +1,5 @@
 # PlaceEase
-
+dnejnfufurf vnfurnoqjenfu
 PlaceEase is a modern web application designed to streamline and enhance the campus placement process for students, companies, and placement coordinators. The platform provides a user-friendly interface and a suite of features to manage placement activities efficiently.
 
 ## Features
