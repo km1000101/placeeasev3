@@ -1,0 +1,153 @@
+.partners-section {
+  background: #1a2236;
+  padding: 56px 0 48px 0;
+}
+
+.partners-section h2 {
+  font-size: 2.4rem;
+  font-weight: 900;
+  margin-bottom: 16px;
+  background: linear-gradient(90deg, #5bc0be 10%, #43e0c6 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.partners-section p {
+  color: #e0e6f7;
+  margin-bottom: 44px;
+  font-size: 1.18rem;
+  text-align: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 28px 32px;
+  max-width: 1100px;
+  margin: 0 auto 32px auto;
+}
+
+.partner-card {
+  background: #232946;
+  color: #fff;
+  border-radius: 12px;
+  border: 1.5px solid #313a5a;
+  padding: 22px 0;
+  font-weight: 700;
+  font-size: 1.13rem;
+  box-shadow: 0 2px 12px rgba(16,24,42,0.08);
+  text-align: center;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.partner-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 0;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* No filter for clarity */
+}
+.partner-card:hover::before {
+  opacity: 0.95;
+}
+.partner-card span, .partner-card {
+  position: relative;
+  z-index: 1;
+}
+.partner-card:hover {
+  background: #ffffff;
+  color: #ffffff;
+  box-shadow: 0 6px 24px rgba(67,224,198,0.13);
+}
+/* Company-specific background images */
+.partner-google:hover::before {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg');
+}
+.partner-microsoft:hover::before {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg');
+}
+.partner-amazon:hover::before {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg');
+}
+.partner-ibm:hover::before {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg');
+}
+.partner-infosys:hover::before {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6e/Infosys_logo.svg');
+}
+.partner-tcs:hover::before {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/8e/Tata_Consultancy_Services_Logo.svg');
+}
+.partner-wipro:hover::before {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0c/Wipro_Primary_Logo_Color_RGB.svg');
+}
+.partner-accenture:hover::before {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5e/Accenture.svg');
+}
+.partner-deloitte:hover::before {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4a/Deloitte_Logo.png');
+}
+.partner-jp-morgan:hover::before {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5a/JPMorgan_Chase_Logo_2008.svg');
+}
+.partner-goldman-sachs:hover::before {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/7a/Goldman_Sachs.svg');
+}
+.partner-adobe:hover::before {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4e/Adobe_Corporate_Logo.png');
+}
+
+.view-all {
+  display: block;
+  margin: 32px auto 0 auto;
+  color: #43e0c6;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-size: 1.13rem;
+  text-align: center;
+}
+.view-all:hover {
+  color: #a259f7;
+}
+
+@media (max-width: 900px) {
+  .partners-section h2,
+  .partners-section p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .partners-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 0 4vw;
+  }
+  .partner-card {
+    font-size: 1rem;
+    padding: 16px 0;
+  }
+  .partners-section h2 {
+    font-size: 1.5rem;
+  }
+  .partners-section p {
+    font-size: 1rem;
+  }
+  .view-all {
+    font-size: 1rem;
+  }
+} 

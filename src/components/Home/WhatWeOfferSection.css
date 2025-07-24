@@ -1,0 +1,110 @@
+.what-we-offer-section {
+  position: relative;
+  background: linear-gradient(135deg, #1a2236 0%, #232946 100%);
+  padding: 56px 0 40px 0;
+  overflow: hidden;
+}
+
+.what-we-offer-section::before {
+  content: '';
+  position: absolute;
+  right: -120px;
+  top: 40px;
+  width: 480px;
+  height: 340px;
+  background: radial-gradient(ellipse at center, #a259f7 40%, transparent 100%);
+  opacity: 0.10;
+  filter: blur(2px);
+  z-index: 0;
+}
+
+.what-we-offer-section h2 {
+  color: #5bc0be;
+  font-size: 2.3rem;
+  font-weight: 900;
+  margin-bottom: 14px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  background: linear-gradient(90deg, #7b61ff 10%, #43e0c6 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.offer-subtitle {
+  color: #e0e6f7;
+  font-size: 1.13rem;
+  margin-bottom: 40px;
+  text-align: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.offer-features-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.offer-feature-card {
+  background: #232946;
+  border: 1.5px solid #3a425c;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(123,97,255,0.10), 0 2px 16px rgba(16, 24, 42, 0.13);
+  padding: 36px 32px 32px 32px;
+  min-width: 320px;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.2s, transform 0.2s;
+  position: relative;
+  z-index: 1;
+}
+.offer-feature-card:hover {
+  box-shadow: 0 16px 48px 0 #a259f7, 0 2px 16px rgba(16, 24, 42, 0.18);
+  transform: translateY(-8px) scale(1.04);
+}
+.offer-feature-icon {
+  margin-bottom: 18px;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #7b61ff 60%, #43e0c6 100%);
+  box-shadow: 0 2px 8px rgba(67,224,198,0.10);
+}
+.offer-feature-icon svg {
+  width: 32px;
+  height: 32px;
+  fill: #fff;
+}
+.offer-feature-title {
+  color: #fff;
+  font-size: 1.22rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #7b61ff 10%, #43e0c6 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.offer-feature-desc {
+  color: #b0b8d1;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+@media (max-width: 1100px) {
+  .offer-features-row {
+    flex-direction: column;
+    gap: 28px;
+    align-items: center;
+  }
+  .offer-feature-card {
+    min-width: 0;
+    width: 90vw;
+    max-width: 380px;
+  }
+} 

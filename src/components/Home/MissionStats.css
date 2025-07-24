@@ -1,0 +1,76 @@
+.mission-stats-row {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 28px auto 0 auto;
+  max-width: 1200px;
+}
+
+.mission-stat-card {
+  background: #232b3e;
+  border: 1.2px solid #3a425c;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(16,24,42,0.10);
+  padding: 12px 18px 14px 22px;
+  min-width: 260px;
+  min-height: 72px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.mission-stat-card:hover {
+  box-shadow: 0 8px 32px rgba(123,97,255,0.13);
+  transform: translateY(-4px) scale(1.03);
+}
+.mission-stat-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #292f47;
+  margin-right: 16px;
+  flex-shrink: 0;
+}
+.mission-stat-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: #a259f7;
+}
+.mission-stat-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.mission-stat-label {
+  color: #b0b8d1;
+  font-size: 0.98rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  letter-spacing: 0.1px;
+  text-align: left;
+}
+.mission-stat-value {
+  color: #fff;
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+@media (max-width: 900px) {
+  .mission-stats-row {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+  .mission-stat-card {
+    min-width: 0;
+    width: 90vw;
+    max-width: 340px;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+} 
